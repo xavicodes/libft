@@ -6,7 +6,7 @@
 /*   By: xlourenc <xlourenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 17:43:27 by xlourenc          #+#    #+#             */
-/*   Updated: 2024/04/10 13:40:30 by xlourenc         ###   ########.fr       */
+/*   Updated: 2024/04/10 13:54:56 by xlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void *memchr(const void *str, int c, size_t n)
 {
-        int i;
+        size_t i;
 
         i = 0;
      while(((char *)str)[i] != c && i < n)

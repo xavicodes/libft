@@ -6,7 +6,7 @@
 /*   By: xlourenc <xlourenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 15:41:20 by xlourenc          #+#    #+#             */
-/*   Updated: 2024/04/09 17:38:36 by xlourenc         ###   ########.fr       */
+/*   Updated: 2024/04/10 14:08:51 by xlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@
 /*
 int main(void)
 {
-       const char str[100] ="hello world";
+       const char str[] ="hello world";
         
-    printf("%s",(char *)ft_memset((void *)str,'a', 10));
+    printf("%s",(char *)ft_memset((void *)str,'f', 13));
        return 0; 
 }
- */
+*/
