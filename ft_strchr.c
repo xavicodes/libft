@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: xaviermonteiro <xaviermonteiro@student.    +#+  +:+       +#+        */
+/*   By: xlourenc <xlourenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 13:58:09 by xlourenc          #+#    #+#             */
-/*   Updated: 2024/04/23 13:39:52 by xaviermonte      ###   ########.fr       */
+/*   Updated: 2024/04/23 16:25:45 by xlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,20 +63,16 @@ char *ft_strchr(const char *str, int c)
 
     int i = 0;
 
-    while (str[i] != '\0' && str[i] != c) // Loop until end of string or character is found
+    while (str[i] != '\0' && str[i] != (unsigned char)c) // Loop until end of string or character is found
     {
-        i++;
-    
-
-    	if (str[i] == (char)c) // Check if the character is found
-    	{
-    	return ((char *)(str + i)); // Return a pointer to the first occurrence of c
-    	}
+	i++;
     }
-    	if((str[i] == (char)c))
+    	if(str[i] == (unsigned char)c)
     	{
-        return (char *)(str + i); // Character not found, return NULL
+        return (char *)(str + i);
     	}
+	      
+
 	return (NULL);
 }
 
