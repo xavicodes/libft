@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: xaviermonteiro <xaviermonteiro@student.    +#+  +:+       +#+        */
+/*   By: xlourenc <xlourenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 17:43:27 by xlourenc          #+#    #+#             */
-/*   Updated: 2024/04/22 19:34:49 by xaviermonte      ###   ########.fr       */
+/*   Updated: 2024/04/29 13:35:09 by xlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,21 +40,19 @@
 // }
 #include "libft.h"
 
-void *ft_memchr(const void *str, int c, size_t n)
+void	*ft_memchr(const void *str, int c, size_t n)
 {
-    size_t i;
+	size_t				i;
+	const unsigned char	*uchar_str = (const unsigned char *)str;
 
-    i = 0;
-    const unsigned char *uchar_str = (const unsigned char *)str; // Cast to unsigned char pointer
-
-    while (i < n) // Check boundary before accessing elements
-    {
-        if (uchar_str[i] == (unsigned char)c)
-        {
-            return (void *)(uchar_str + i); // Cast result to void*
-        }
-        i++;
-    }
-
-    return (0); // Return null pointer if character is not found
+	i = 0;
+	while (i < n)
+	{
+		if (uchar_str[i] == (unsigned char)c)
+		{
+			return (void *)(uchar_str + i); // Cast result to void*
+		}
+		i++;
+	}
+	return (0); // Return null pointer if character is not found
 }

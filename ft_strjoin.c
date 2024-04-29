@@ -6,7 +6,7 @@
 /*   By: xlourenc <xlourenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 14:37:10 by xlourenc          #+#    #+#             */
-/*   Updated: 2024/04/15 14:52:28 by xlourenc         ###   ########.fr       */
+/*   Updated: 2024/04/29 13:51:13 by xlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	a = 0;
-	str3 = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2)));
+	if (!s1 && !s2)
+		return (NULL);
+	str3 = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (!str3)
 	{
 		return (NULL);
@@ -38,6 +40,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		i++;
 		a++;
 	}
+	str3[i] = '\0';
 	return (str3);
 }
 /*

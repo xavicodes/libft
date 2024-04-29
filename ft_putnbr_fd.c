@@ -4,17 +4,17 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	int digit;
+	int	digit;
 
-        digit = 0;
+	digit = 0;
 	if (n < 0)
 	{
 		if (n == -2147483648)
-                {
+		{
 			write(fd, "-2147483648", 12);
-                        return;
-                }
-                write(fd, "-", 1);
+			return ;
+		}
+		write(fd, "-", 1);
 		n *= -1;
 	}
 	if (n < 10)
@@ -28,4 +28,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(digit, fd);
 	}
 }
-

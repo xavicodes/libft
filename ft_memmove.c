@@ -6,7 +6,7 @@
 /*   By: xlourenc <xlourenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 12:39:47 by xlourenc          #+#    #+#             */
-/*   Updated: 2024/04/22 16:51:30 by xlourenc         ###   ########.fr       */
+/*   Updated: 2024/04/29 13:35:57 by xlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,14 @@ void	*ft_memmove(void *str1, const void *str2, size_t n)
 	{
 		return (0);
 	}
-	if(str1 > str2)
+	if (str1 > str2)
 	{
-		while(n-- > 0)
+		while (n-- > 0)
 			((char *)str1)[n] = ((char *)str2)[n];
 	}
-		
 	else
 	{
-		while(i < n)
+		while (i < n)
 		{
 			((char *)str1)[i] = ((char *)str2)[i];
 			i++;
