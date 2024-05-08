@@ -6,7 +6,7 @@
 /*   By: xaviermonteiro <xaviermonteiro@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 16:14:09 by xaviermonte       #+#    #+#             */
-/*   Updated: 2024/04/29 16:18:06 by xaviermonte      ###   ########.fr       */
+/*   Updated: 2024/05/08 10:58:23 by xaviermonte      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,10 @@
 int ft_lstsize(t_list *lst)
 {
         int i;
-
         i = 0;
         while(lst)
         {
-               *lst = *lst->next;
+               lst = lst->next;
                 i++;
         }
         return (i);

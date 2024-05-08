@@ -6,7 +6,7 @@
 /*   By: xaviermonteiro <xaviermonteiro@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 16:17:29 by xlourenc          #+#    #+#             */
-/*   Updated: 2024/05/03 14:19:14 by xaviermonte      ###   ########.fr       */
+/*   Updated: 2024/05/03 14:51:34 by xaviermonte      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,7 +122,7 @@ static int	count_words(const char *str, char c)
 	{
 		if (*str != c && toggle == 0)
 		{
-			toggle = 1;		// hello world!
+			toggle = 1;
 			i++;
 		}
 		else if (*str == c)

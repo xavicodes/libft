@@ -6,7 +6,7 @@
 /*   By: xaviermonteiro <xaviermonteiro@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 17:05:10 by xaviermonte       #+#    #+#             */
-/*   Updated: 2024/04/29 17:11:52 by xaviermonte      ###   ########.fr       */
+/*   Updated: 2024/05/08 10:49:16 by xaviermonte      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void ft_lstclear(t_list **lst, void (*del)(void*))
         while(*lst)
         {
                 temp = (*lst)->next;
-                ft_lstdelone(lst,del);
+                ft_lstdelone(*lst,del);
                 *lst = temp;
         }
 }
