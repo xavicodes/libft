@@ -3,25 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: xaviermonteiro <xaviermonteiro@student.    +#+  +:+       +#+        */
+/*   By: xlourenc <xlourenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 17:12:36 by xaviermonte       #+#    #+#             */
-/*   Updated: 2024/05/08 10:50:40 by xaviermonte      ###   ########.fr       */
+/*   Updated: 2024/05/10 13:27:48 by xlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-        if(!lst)
-                return ;
-        while(lst)
-        {
-                f(lst->content);
-                lst = lst->next;
-        }
+	if (!lst)
+		return ;
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }
+
 // void f(void *content)
 // {
 //         printf("itersting true nodes\n");
