@@ -29,6 +29,7 @@ bonus:		$(BONUS_OBJS)
 clean:
 	rm -f $(OBJS) $(BONUS_OBJS) bonus
 
-fclean: clean	
+fclean: clean
+	rm -f $(LIB)
 
 re: fclean all
