@@ -6,7 +6,7 @@
 /*   By: xlourenc <xlourenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 14:15:42 by xlourenc          #+#    #+#             */
-/*   Updated: 2024/05/13 12:34:45 by xlourenc         ###   ########.fr       */
+/*   Updated: 2024/05/13 12:43:42 by xlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	return (0);
 }
-
+/*
 int	main(void)
 {
 	int	c;
@@ -37,4 +37,4 @@ int	main(void)
 		char str[30] ="hello mx frined x prank";
 		printf("%s",ft_strrchr(str,c));
 		return (0);
-}
+}*/

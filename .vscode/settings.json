@@ -1,7 +1,0 @@
-{
-        "files.associations": {
-                "__config": "cpp",
-                "libft.h": "c",
-                "chrono": "c"
-        }
-}
