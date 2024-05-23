@@ -6,7 +6,7 @@
 /*   By: xlourenc <xlourenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 12:53:13 by xlourenc          #+#    #+#             */
-/*   Updated: 2024/05/22 17:15:23 by xlourenc         ###   ########.fr       */
+/*   Updated: 2024/05/23 13:30:56 by xlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-/*
-int	main(void)
-{
-	char big[] = "hello world friend";
-	char little[] = "world";
 
-	printf("%s", ft_strnstr(big, little, 19));
-}*/
+/* int	main(void)
+{
+	char big[] = "big";
+	char little[] = "";
+
+	printf("%s", ft_strnstr(big, little, 0));
+
+} */
